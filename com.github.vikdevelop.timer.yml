@@ -19,6 +19,6 @@ modules:
        - install -Dm644 -t /app/share/metainfo flatpak/com.github.vikdevelop.timer.metainfo.xml
     sources:
           - type: archive
-            url: https://github.com/vikdevelop/timer/archive/refs/tags/1.6.5.tar.gz
-            sha256: 02656f47077b4cdbc19af3e0e5f2a6372b9f5e4cd7427873ed987b5ee781f51c
+            url: https://github.com/vikdevelop/timer/archive/refs/tags/1.9.tar.gz
+            sha256: 0946ccbf341f4381750c3b1aac7414a06d9004ad352a8a8499df7eece821ddb5
             
