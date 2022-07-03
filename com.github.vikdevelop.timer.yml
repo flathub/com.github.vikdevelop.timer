@@ -7,6 +7,7 @@ finish-args:
     - --share=ipc
     - --socket=wayland
     - --socket=fallback-x11
+    - --talk-name=org.freedesktop.Notifications
 modules:
   - name: timer
     buildsystem: simple
@@ -17,9 +18,9 @@ modules:
        - install -D -t /app/src src/main.py
        - cp -R translations /app/
        - install -D -t /app/share/applications flatpak/com.github.vikdevelop.timer.desktop
-       - install -D -t /app/share/icons/hicolor/128x128/apps flatpak/icons/com.github.vikdevelop.timer.png
+       - install -D -t /app/share/icons/hicolor/128x128/apps flatpak/appicon/com.github.vikdevelop.timer.png
        - install -D -t /app/share/metainfo flatpak/com.github.vikdevelop.timer.metainfo.xml
     sources:
           - type: archive
-            url: https://github.com/vikdevelop/timer/archive/refs/tags/1.8.2.tar.gz
-            sha256: ec5e33349f9e7c2ca67c8c8e24ad39998712f8d7e840ec8ac5df9316275bb436
+            url: https://github.com/vikdevelop/timer/archive/refs/tags/1.9.tar.gz
+            sha256: 2801dbecae2d0daf206cc1e7f26e21ad9b0e7da3b6f8a196ca582e366cd03ec1
