@@ -1,6 +1,6 @@
 app-id: com.github.vikdevelop.timer
 runtime: org.gnome.Platform
-runtime-version: '42'
+runtime-version: '43'
 sdk: org.gnome.Sdk
 command: timer.sh
 finish-args:
@@ -9,6 +9,7 @@ finish-args:
     - --socket=fallback-x11
     - --device=dri
     - --talk-name=org.freedesktop.Notifications
+    - --socket=pulseaudio
 modules:
   - name: timer
     buildsystem: simple
@@ -18,10 +19,11 @@ modules:
        - install -D -t /app timer.py
        - install -D -t /app/src src/main.py
        - cp -R translations /app/
+       - install -D -t /app/share/beeps src/beeps/Oxygen.ogg
        - install -D -t /app/share/applications flatpak/com.github.vikdevelop.timer.desktop
        - install -D -t /app/share/icons/hicolor/128x128/apps flatpak/appicon/com.github.vikdevelop.timer.png
        - install -D -t /app/share/metainfo flatpak/com.github.vikdevelop.timer.metainfo.xml
     sources:
           - type: archive
-            url: https://github.com/vikdevelop/timer/archive/refs/tags/2.1.1.tar.gz
-            sha256: 401497b7cc1d2cbbc0be7a217e64631fef51bb350a4da49cb7fdd5a00be2f2a7
+            url: https://github.com/vikdevelop/timer/archive/refs/tags/2.2.tar.gz
+            sha256: f3ecb9dbf15674e71933e30398e104a14025b3a01064d720881bc85aeef3ce42
