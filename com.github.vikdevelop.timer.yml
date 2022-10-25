@@ -26,5 +26,5 @@ modules:
        - install -D -t /app/share/metainfo flatpak/com.github.vikdevelop.timer.metainfo.xml
     sources:
           - type: archive
-            url: https://github.com/vikdevelop/timer/archive/refs/tags/2.3T.tar.gz
-            sha256: 689e0c774fed29689bbc5ce181be37467a5e0cced8a2bf8527ef6272ca212bd4
+            url: https://github.com/vikdevelop/timer/archive/refs/tags/2.3B.tar.gz
+            sha256: abe476fe9a21340c4626267de526baaf27bd28785ff91c0bf03b56151cc8133f
