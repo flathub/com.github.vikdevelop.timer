@@ -19,12 +19,12 @@ modules:
        - install -D -t /app/bin timer.sh
        - install -D -t /app timer.py
        - install -D -t /app/src src/main.py
-       - cp -R translations /app/
+       - mkdir /app/translations && cp translations/json/* /app/translations/
        - install -D -t /app/share/beeps src/beeps/Oxygen.ogg
        - install -D -t /app/share/applications flatpak/com.github.vikdevelop.timer.desktop
        - install -D -t /app/share/icons/hicolor/128x128/apps flatpak/appicon/com.github.vikdevelop.timer.png
        - install -D -t /app/share/metainfo flatpak/com.github.vikdevelop.timer.metainfo.xml
     sources:
           - type: archive
-            url: https://github.com/vikdevelop/timer/archive/refs/tags/2.4.tar.gz
-            sha256: 4933f1e4459b1ab4c3004d24568facfa374235a23a83aee173fc872657cb034a
+            url: https://github.com/vikdevelop/timer/archive/refs/tags/2.5.tar.gz
+            sha256: 1203f74311681ffdaf659350c393cc239b6c667119d32edef0a2b90519dbb294
