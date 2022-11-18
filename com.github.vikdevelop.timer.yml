@@ -27,4 +27,4 @@ modules:
     sources:
           - type: archive
             url: https://github.com/vikdevelop/timer/archive/refs/tags/2.5.tar.gz
-            sha256: 5f98b6db146802b357e779177d8672b99d6efcb1642512928bdb7b77e620c00e
+            sha256: 1203f74311681ffdaf659350c393cc239b6c667119d32edef0a2b90519dbb294
