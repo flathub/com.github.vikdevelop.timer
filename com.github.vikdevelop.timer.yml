@@ -24,7 +24,8 @@ modules:
        - install -D -t /app/share/applications flatpak/com.github.vikdevelop.timer.desktop
        - install -D -t /app/share/icons/hicolor/128x128/apps flatpak/appicon/com.github.vikdevelop.timer.png
        - install -D -t /app/share/metainfo flatpak/com.github.vikdevelop.timer.metainfo.xml
+       - cp flatpak/icons-symbolic/* /app/share/icons/hicolor/128x128/apps/
     sources:
           - type: archive
-            url: https://github.com/vikdevelop/timer/archive/refs/tags/2.5T.tar.gz
-            sha256: 22ee34e97979dfe92afdb63e0d0fafa4f75cbe819d16609d478dc99dca503a42
+            url: https://github.com/vikdevelop/timer/archive/refs/tags/2.5U.tar.gz
+            sha256: 91e65ec9afc865b3a7feae8f7f86878f120565bd85bb1fe450f451ce1087c160
