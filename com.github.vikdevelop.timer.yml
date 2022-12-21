@@ -32,6 +32,6 @@ modules:
        - install -D -t /app/share/metainfo flatpak/com.github.vikdevelop.timer.metainfo.xml
        - cp flatpak/icons-symbolic/* /app/share/icons/hicolor/128x128/apps/
     sources:
-    	- type: archive
-        url: https://github.com/vikdevelop/timer/archive/refs/tags/2.6I.tar.gz
-        sha256: 9ec514f3727497d4aafa8a251e9d37bbac65803605b5dafee9fdceb8609f074d
+          - type: archive
+            url: https://github.com/vikdevelop/timer/archive/refs/tags/2.6I.tar.gz
+            sha256: 9ec514f3727497d4aafa8a251e9d37bbac65803605b5dafee9fdceb8609f074d
