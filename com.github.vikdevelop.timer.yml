@@ -5,13 +5,18 @@ sdk: org.gnome.Sdk
 command: timer.sh
 finish-args:
     - --share=ipc
-    - --share=network # for continuous localization from Hosted Weblate
+    # for continuous localization from Hosted Weblate
+    - --share=network
     - --socket=wayland
     - --socket=fallback-x11
-    - --device=dri # for potentional problems with GPU accellaration
-    - --talk-name=org.freedesktop.Notifications # for send notification about finished timing
-    - --system-talk-name=org.freedesktop.login1 # for realization shut down/reboot/suspend system after finished timer
-    - --socket=pulseaudio # for play beep after finished timer
+    # for potentional problems with GPU accellaration
+    - --device=dri
+    # for send notification about finished timing
+    - --talk-name=org.freedesktop.Notifications
+    # for realization shut down/reboot/suspend system after finished timer
+    - --system-talk-name=org.freedesktop.login1
+    --# for play beep after finished timer
+    - --socket=pulseaudio
 modules:
   - name: timer
     buildsystem: simple
