@@ -5,11 +5,17 @@ sdk: org.gnome.Sdk
 command: timer.sh
 finish-args:
     - --share=ipc
+    # for continuous localization from Hosted Weblate
+    - --share=network
     - --socket=wayland
     - --socket=fallback-x11
+    # for potentional problems with GPU accellaration
     - --device=dri
+    # for send notification about finished timing
     - --talk-name=org.freedesktop.Notifications
+    # for realization shut down/reboot/suspend system after finished timer
     - --system-talk-name=org.freedesktop.login1
+    # for play beep after finished timer
     - --socket=pulseaudio
 modules:
   - name: timer
@@ -19,13 +25,13 @@ modules:
        - install -D -t /app/bin timer.sh
        - install -D -t /app timer.py
        - install -D -t /app/src src/main.py
-       - mkdir /app/translations && cp translations/json/* /app/translations/
        - install -D -t /app/share/beeps src/beeps/Oxygen.ogg
+       - mkdir /app/translations && cp translations/json/* /app/translations
        - install -D -t /app/share/applications flatpak/com.github.vikdevelop.timer.desktop
        - install -D -t /app/share/icons/hicolor/128x128/apps flatpak/appicon/com.github.vikdevelop.timer.png
        - install -D -t /app/share/metainfo flatpak/com.github.vikdevelop.timer.metainfo.xml
        - cp flatpak/icons-symbolic/* /app/share/icons/hicolor/128x128/apps/
     sources:
           - type: archive
-            url: https://github.com/vikdevelop/timer/archive/refs/tags/2.6T.tar.gz
-            sha256: a5634c63c78100ccf13cf55862437d58f1979a9b96993465dd527d38adde1f6c
+            url: https://github.com/vikdevelop/timer/archive/refs/tags/2.6I.tar.gz
+            sha256: 9ec514f3727497d4aafa8a251e9d37bbac65803605b5dafee9fdceb8609f074d
