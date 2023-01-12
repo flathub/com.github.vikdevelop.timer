@@ -15,7 +15,7 @@ finish-args:
     - --talk-name=org.freedesktop.Notifications
     # for realization shut down/reboot/suspend system after finished timer
     - --system-talk-name=org.freedesktop.login1
-    # for play beep after finished timer
+    # for play beep and alarm clock after finished timer
     - --socket=pulseaudio
 modules:
   - name: timer
