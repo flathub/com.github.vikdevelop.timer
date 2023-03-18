@@ -35,5 +35,5 @@ modules:
        - cp flatpak/icons-symbolic/* /app/share/icons/hicolor/128x128/apps/
     sources:
           - type: archive
-            url: https://github.com/vikdevelop/timer/archive/refs/tags/2.9U.tar.gz
-            sha256: 8ac0d8cc0b93addc584bb2f0d5605c8c227a59896f3ac79a91873d3db247f27a
+            url: https://github.com/vikdevelop/timer/archive/refs/tags/3.0B.tar.gz
+            sha256: 45fc06466523084ce10a15fcfa6c316ccd8976865cf4b3e109ffc9b4cc5bab6f
