@@ -1,6 +1,6 @@
 app-id: com.github.vikdevelop.timer
 runtime: org.gnome.Platform
-runtime-version: '44'
+runtime-version: '45'
 sdk: org.gnome.Sdk
 command: timer.sh
 finish-args:
@@ -23,12 +23,8 @@ modules:
     build-commands:
        - chmod +x timer.sh
        - install -D -t /app/bin timer.sh
-       - install -D -t /app/src src/alarm.sh
        - install -D -t /app timer.py
-       - install -D -t /app/src src/main.py
-       - install -D -t /app/src src/CHANGELOG.py
-       - install -D -t /app/src src/background.py
-       - install -D -t /app/src src/alarm_notification.py
+       - cp -R src /app/
        - install -D -t /app/share/beeps src/beeps/Oxygen.ogg && install -D -t /app/share/beeps src/beeps/Oxygen-Im-Phone-Ring.ogg
        - mkdir /app/translations && cp translations/json/* /app/translations
        - install -D -t /app/share/applications flatpak/com.github.vikdevelop.timer.desktop
@@ -39,5 +35,5 @@ modules:
        - cp flatpak/icons-symbolic/* /app/share/icons/hicolor/128x128/apps/
     sources:
           - type: archive
-            url: https://github.com/vikdevelop/timer/archive/refs/tags/3.3.2t.tar.gz
-            sha256: 28e4b90364dcc358438542d351ac5ac38fa28dcd7dae76986031d333a24a1a34
+            url: https://github.com/vikdevelop/timer/archive/refs/tags/3.3.3b.tar.gz
+            sha256: c39aa4af600cd1a3608f2cfeaca861bbf80d2e7b6a7e3b453932fd0bb1ddd132
