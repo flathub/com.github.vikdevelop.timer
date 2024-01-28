@@ -5,8 +5,6 @@ sdk: org.gnome.Sdk
 command: timer.sh
 finish-args:
     - --share=ipc
-    # for continuous localization from Hosted Weblate
-    - --share=network
     - --socket=wayland
     - --socket=fallback-x11
     # for potentional problems with GPU accellaration
