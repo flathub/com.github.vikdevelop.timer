@@ -1,6 +1,6 @@
 app-id: com.github.vikdevelop.timer
 runtime: org.gnome.Platform
-runtime-version: '46'
+runtime-version: '47'
 sdk: org.gnome.Sdk
 command: timer.sh
 finish-args:
@@ -33,5 +33,5 @@ modules:
        - cp flatpak/icons-symbolic/* /app/share/icons/hicolor/128x128/apps/
     sources:
           - type: archive
-            url: https://github.com/vikdevelop/timer/archive/refs/tags/3.4.2s.tar.gz
-            sha256: 7b0a459db6720dccc501dc5b63c51aab103e79234789e7b2506706c1212a747e
+            url: https://github.com/vikdevelop/timer/archive/refs/tags/3.4.3.tar.gz
+            sha256: 73886c4d6244e0a20d6554cfddaded3767ece31914f7b6f1da88622aa8cd96b8
